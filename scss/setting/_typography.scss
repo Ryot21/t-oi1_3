@@ -128,6 +128,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     // 色
     &.-white{color: $main-color--w !important;}
     &.-black{color: $main-color--b !important;}
+    &.-red{color: $main-color--red !important;}
 
     &.-color01{color: $site-color01 !important;}
     &.-color02{color: $site-color02 !important;}

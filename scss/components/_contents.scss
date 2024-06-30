@@ -296,6 +296,89 @@
 					z-index: 1;
 				}
 			}
+
+			// 自由設計
+			&.-plan-text01{
+				@include max(768){
+					top: 70%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 81%;
+				}
+				@include min(768){
+					top: 0%;
+					left: 25%;
+					width: 75%;
+				}
+			}
+
+
+			&.-plan-title02{
+				@include max(768){
+					top: 11%;
+					left: 55%;
+					transform: translate(-50%, -50%);
+					width: 70%;
+				}
+				@include min(768){
+					top: 14%;
+					left: 10%;
+					width: 90%;
+				}
+			}
+			&.-plan-title04{
+				@include max(768){
+					top: 11%;
+					left: 60%;
+					transform: translate(-50%, -50%);
+					width: 80%;
+				}
+				@include min(768){
+					top: 14%;
+					left: 9.7%;
+					width: 90%;
+				}
+			}
+
+			&.-plan-text02{
+				@include max(768){
+					top: 40%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 95%;
+				}
+				@include min(768){
+					top: 40%;
+					left: 10%;
+					width: 66%;
+				}
+			}
+			&.-plan-text03{
+				@include max(768){
+					top: 48%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 95%;
+				}
+				@include min(768){
+					top: 40%;
+					left: 10%;
+					width: 66%;
+				}
+			}
+			&.-plan-text04{
+				@include max(768){
+					top: 48%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 95%;
+				}
+				@include min(768){
+					top: 40%;
+					left: 10%;
+					width: 75%;
+				}
+			}
 		}
 	}
 }
