@@ -4479,6 +4479,9 @@ button.swiper-pagination-bullet {
 .c-contents_title.-naikanDesign::before {
   content: "INNER DESIGN";
 }
+.c-contents_title.-land::before {
+  content: "LANDSCAPE";
+}
 .c-contents_title.-layout::before {
   content: "LAYOUT PLAN / PLOT PLAN";
   white-space: nowrap;

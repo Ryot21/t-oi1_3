@@ -52,6 +52,8 @@
     &.-naikan{&::before{content: "NTROSPECTION";}}                                  // 内観
     &.-naikanDesign{&::before{content: "INNER DESIGN";}}                            // 内観デザイン
 
+    &.-land{&::before{content: "LANDSCAPE";}}                                       // 内観デザイン
+
     &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN"; white-space: nowrap;}}  // レイアウト
     &.-house-layout{&::before{content: "HOUSE LAYOUT"; white-space: nowrap;}}       // ハウスレイアウト
     &.-plan{&::before{content: "PLAN"; white-space: nowrap;}}                       // プラン
