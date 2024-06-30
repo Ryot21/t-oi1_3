@@ -137,11 +137,11 @@
 					&.-active{
 						pointer-events: none;
 						span{
-							color: $site-color01;
+							color: $site-color02;
 							&::after{
 								width: 100%;
 								height: 1px;
-								background: $site-color01;
+								background: $site-color02;
 							}
 						}
 					}
