@@ -45,6 +45,9 @@
 </head>
 <body class="p-concept js_humburgerClose">
 
+    <!-- 固定アイテム / TOPボタン -->
+    <a href="#header" class="c-btn-top -center a-fadeUp -sp25">TOPへ</a>
+
     <!-- ハンバーガーメニュー -->
     <nav class="c-hnav a-scroll-on">
 		<input id="c-hnav__checkbox" class="c-hnav__cheakbox" type="checkbox"/>
@@ -211,7 +214,7 @@
                     街の利便と緑の癒しに満たされる笑顔きらめく暮らし！
                 </h2>
                 <!-- コンテンツ > 説明 -->
-                <p class="s-M -left -lh-2 a-fadeUp -sc40">
+                <p class="s-M -left -lh-2 a-fadeUp -sc-auto">
                     大型ショッピング施設をはじめ、公園や学校・保育園、さらには図書館や市役所、総合病院など暮らしに直結した施設が整う周辺環境。<br class="tb-pc">
                     家族生活に便利さと楽しさをプラスする子育て世帯に嬉しいロケーションです。<br class="tb-pc">
                     家族と過ごす休日を楽しみに、毎日の生活を送れる永住の住み心地がここにあります。
@@ -339,22 +342,7 @@
 
         <!---------- モーダル関係 ---------->
         <div class="">
-            <input type="checkbox" id="popup01" ><!-- popup01 -->
-            <label class="popup-overlay" for="popup01"></label>
-            <div class="popup-window">
-                <!-- 閉じるボタン -->
-                <label class="popup-close" for="popup01">
-                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-                        <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-                    </svg>
-                </label>
-                <!-- iframe -->
-                <iframe id="inlineFrame01" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712972338（新築戸建）"></iframe>
-            </div>
-        </div>
-        <div class="">
-            <input type="checkbox" id="popup02" ><!-- popup02 -->
+            <input type="checkbox" id="popup02" ><!-- popup01 -->
             <label class="popup-overlay" for="popup02"></label>
             <div class="popup-window">
                 <!-- 閉じるボタン -->
@@ -365,25 +353,7 @@
                     </svg>
                 </label>
                 <!-- iframe -->
-                <iframe id="inlineFrame02" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712972338（建築条件付き土地）"></iframe>
-            </div>
-        </div>
-
-
-        <!-- 画像の場合 -->
-        <div class="">
-            <input type="checkbox" id="popup-imgBox" >
-            <label class="popup-overlay" for="popup-imgBox"></label>
-            <div class="popup-window -popImg">
-                <label class="popup-close" for="popup-imgBox">
-                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-                        <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-                    </svg>
-                </label>
-                <div class="popup-img">
-                    <img src="images/～" alt="">
-                </div>
+                <iframe id="inlineFrame01" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712972338"></iframe>
             </div>
         </div>
 

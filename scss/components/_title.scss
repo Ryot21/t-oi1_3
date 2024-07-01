@@ -52,11 +52,14 @@
     &.-naikan{&::before{content: "NTROSPECTION";}}                                  // 内観
     &.-naikanDesign{&::before{content: "INNER DESIGN";}}                            // 内観デザイン
 
-    &.-landscape{&::before{content: "LANDSCAPE";}}                                       // 内観デザイン
+    &.-landscape{&::before{content: "LANDSCAPE";}}                                  // 内観デザイン
     &.-land     {&::before{content: "LAND";}}
-    &.-interior {&::before{content: "INTERIOR"; white-space: nowrap;}}                       // プラン
-    &.-eq       {&::before{content: "EQUIPMENT"; white-space: nowrap;}}                       // プラン
+    &.-interior {&::before{content: "INTERIOR"; white-space: nowrap;}}
+    &.-eq       {&::before{content: "EQUIPMENT"; white-space: nowrap;}}
 
+    &.-shopping {&::before{content: "SHOPPING"; white-space: nowrap;}}
+    &.-park     {&::before{content: "PARK"; white-space: nowrap;}}
+    &.-other    {&::before{content: "OTHER"; white-space: nowrap;}}
 
     &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN"; white-space: nowrap;}}  // レイアウト
     &.-house-layout{&::before{content: "HOUSE LAYOUT"; white-space: nowrap;}}       // ハウスレイアウト
@@ -311,11 +314,12 @@
             margin-bottom: 3%;
         }
         &::before{
-            bottom: -15%;
+            bottom: -40%;
             left: 50%;
             transform: translateX(-50%) scaleY(0.75);
             width: 100%;
-            color: $main-color--b;
+            height: 1px;
+            background: $main-color--b;
         }
         // アイコン文頭にある場合のみ、ボーダーの位置を変更する。
         &.-dot{&::before{border-bottom: 3px dotted;}}

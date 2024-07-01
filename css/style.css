@@ -425,6 +425,11 @@ h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-
     font-size: 1.4rem;
   }
 }
+@media (768px >= width) {
+  h1.s-L.-s16, h2.s-L.-s16, h3.s-L.-s16, h4.s-L.-s16, h5.s-L.-s16, h6.s-L.-s16, p.s-L.-s16, a.s-L.-s16, span.s-L.-s16, label.s-L.-s16, button.s-L.-s16 {
+    font-size: 1.6rem;
+  }
+}
 h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL, label.s-LL, button.s-LL {
   font-size: 2.1rem;
 }
@@ -2878,13 +2883,34 @@ button.swiper-pagination-bullet {
 }
 
 .colorBox {
-  background: #74a64c;
+  background: #3b3b3b;
   padding: 3% 0 6%;
-  border-radius: 5px;
 }
 @media (width >= 768px) {
   .colorBox {
     padding: 3% 0 4%;
+  }
+}
+
+.P {
+  position: relative;
+}
+.P::after {
+  content: "P";
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 0.9;
+  color: #ffffff;
+  background: #3b3b3b;
+  padding: 1% 1.5%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+@media (width >= 768px) {
+  .P::after {
+    padding: 1%;
   }
 }
 
@@ -3694,6 +3720,9 @@ button.swiper-pagination-bullet {
     width: 60%;
     padding-left: 5%;
   }
+}
+.c-footer__shopArea .c-footer__shopFlex li a {
+  display: block;
 }
 
 .c-hnav {
@@ -4587,6 +4616,18 @@ button.swiper-pagination-bullet {
   content: "EQUIPMENT";
   white-space: nowrap;
 }
+.c-contents_title.-shopping::before {
+  content: "SHOPPING";
+  white-space: nowrap;
+}
+.c-contents_title.-park::before {
+  content: "PARK";
+  white-space: nowrap;
+}
+.c-contents_title.-other::before {
+  content: "OTHER";
+  white-space: nowrap;
+}
 .c-contents_title.-layout::before {
   content: "LAYOUT PLAN / PLOT PLAN";
   white-space: nowrap;
@@ -4895,11 +4936,12 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents_subTitle.-borderBtm::before {
-  bottom: -15%;
+  bottom: -40%;
   left: 50%;
   transform: translateX(-50%) scaleY(0.75);
   width: 100%;
-  color: #3b3b3b;
+  height: 1px;
+  background: #3b3b3b;
 }
 .c-contents_subTitle.-borderBtm.-dot::before {
   border-bottom: 3px dotted;
@@ -5024,59 +5066,12 @@ button.swiper-pagination-bullet {
 .c-flex.-col1_2 {
   flex-wrap: wrap;
 }
-@media (width >= 768px) {
-  .c-flex.-col1_2 {
-    flex-wrap: nowrap;
-  }
-}
 .c-flex.-col1_2 li {
   width: 100%;
 }
 @media (width >= 768px) {
   .c-flex.-col1_2 li {
-    width: calc(50% - 15px);
-  }
-  .c-flex.-col1_2 li:nth-child(1) {
-    margin-right: 15px;
-  }
-  .c-flex.-col1_2 li:nth-child(2) {
-    margin-left: 15px;
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col1_2 li.text {
-    width: calc(35% - 15px);
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col1_2 li.img {
-    width: calc(65% - 15px);
-  }
-}
-.c-flex.-col1_2.-r li {
-  width: 100%;
-}
-@media (width >= 768px) {
-  .c-flex.-col1_2.-r li {
-    width: calc(50% - 15px);
-  }
-  .c-flex.-col1_2.-r li:nth-child(1) {
-    margin-right: auto;
-    margin-left: 15px;
-  }
-  .c-flex.-col1_2.-r li:nth-child(2) {
-    margin-right: 15px;
-    margin-left: auto;
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col1_2.-r li.text {
-    width: calc(35% - 15px);
-  }
-}
-@media (width >= 768px) {
-  .c-flex.-col1_2.-r li.img {
-    width: calc(65% - 15px);
+    width: 48.5%;
   }
 }
 @media (width >= 768px) {
