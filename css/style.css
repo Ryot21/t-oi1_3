@@ -6166,6 +6166,222 @@ a {
   background: #74a64c;
 }
 
+.swiper-title {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+@media (width >= 768px) {
+  .swiper-title {
+    width: 85%;
+  }
+}
+.swiper-title .balloon2 {
+  position: absolute;
+  top: 33%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 19%;
+  height: auto;
+  border-radius: 50%;
+}
+@media (width >= 768px) {
+  .swiper-title .balloon2 {
+    top: 30%;
+    width: 15%;
+    max-width: 150px;
+  }
+}
+.swiper-title .balloon2.-site-balloon-c {
+  background: #998675;
+}
+.swiper-title .balloon3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 19%;
+  height: auto;
+  border-radius: 50%;
+}
+@media (width >= 768px) {
+  .swiper-title .balloon3 {
+    width: 15%;
+    max-width: 150px;
+  }
+}
+.swiper-title .balloon3.-site-balloon-c {
+  background: #998675;
+}
+
+.swiperArea {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+@media (width >= 768px) {
+  .swiperArea .swiper-container {
+    padding: 0 40px;
+  }
+}
+.swiperArea .swiper-container.card-swiper {
+  margin-bottom: 80px;
+}
+.swiperArea .swiper-container.card-swiper:last-child {
+  margin-bottom: 30px;
+}
+@media (width >= 768px) {
+  .swiperArea .swiper-container.card-swiper:last-child {
+    margin-bottom: 80px;
+  }
+}
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next,
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev {
+  width: 45px; /* 背景画像の幅を必ず指定 */
+  height: 45px; /* 背景画像の高さを必ず指定 */
+  transform: translateY(-50%);
+  background: gray;
+  border: 1px solid white;
+  border-radius: 50%;
+  opacity: 1;
+  transition: all 0.5s;
+  z-index: 6 !important;
+}
+@media (400px >= width) {
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next,
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev {
+    top: 50%;
+    transform: scale(0.5, 0.5) translateY(-50%);
+  }
+}
+@media (width >= 768px) {
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next,
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next::after,
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev::after {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: ""; /* 空指定してデフォルトの矢印を消す */
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next:hover,
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev:hover {
+  opacity: 0.8;
+}
+@media (400px >= width) {
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev {
+    left: -10px;
+  }
+}
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev::after {
+  border-width: 11px 14px 11px 0;
+  border-color: transparent #fff transparent transparent;
+  right: 25%;
+}
+@media (400px >= width) {
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next {
+    right: -10px;
+  }
+}
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next::after {
+  border-width: 11px 0 11px 14px;
+  border-color: transparent transparent transparent #fff;
+  left: 55%;
+}
+.swiperArea .swiper-container .swiper-pagination {
+  bottom: 4.5%;
+  z-index: 5 !important;
+}
+@media (width >= 768px) {
+  .swiperArea .swiper-container .swiper-pagination {
+    bottom: 7%;
+  }
+}
+.swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #bcd537;
+}
+.swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  transition: 0.5s all;
+}
+@media (width >= 768px) {
+  .swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    width: 0.8vw;
+    height: 0.8vw;
+    margin: 0 0.8vw;
+  }
+}
+.swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet:hover {
+  background: #5a8190;
+}
+.swiperArea .swiper-container.thumbnail {
+  width: 100%;
+}
+@media (400px >= width) {
+  .swiperArea .swiper-container.thumbnail .swiper-wrapper {
+    justify-content: space-between;
+  }
+}
+.swiperArea .swiper-container.thumbnail .swiper-slide.s-item {
+  width: calc(33.3333% - 5px) !important;
+  height: auto;
+  padding: 0 2.5px;
+  margin-bottom: 5px;
+}
+.swiperArea .swiper-container.thumbnail .swiper-slide.s-item img {
+  width: 100%;
+  height: auto;
+}
+.card {
+  width: 365px;
+  height: auto;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-L {
+  width: 85%;
+  height: auto;
+  margin: auto;
+}
+@media (width >= 768px) {
+  .card-L {
+    width: 95%;
+    max-width: 1260px;
+  }
+}
+.card-L img {
+  width: 100%;
+  height: auto;
+}
+
+@media (400px >= width) {
+  .g-sliderBox01 .swiper-pagination {
+    bottom: 49.7% !important;
+  }
+}
+
+.washatendArea {
+  margin: 0 auto 90px;
+}
+
+.thumbnail .swiper-slide {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.thumbnail .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
 #popup,
 #popup01,
 #popup02,
@@ -6674,6 +6890,24 @@ a {
   width: 100vw;
   height: 150vh;
   background: rgba(0, 0, 0, 0.392);
+}
+.p-equipment .border-bottom {
+  width: 85vw;
+  max-width: 1260px;
+  margin: 0 auto 4vh;
+  border-bottom: 1px solid black;
+}
+@media (width >= 768px) {
+  .p-equipment .border-bottom {
+    width: 70vw;
+    margin: 0 auto 12vh;
+  }
+}
+.p-equipment .border-bottom.-s {
+  margin: 0 auto 6vh;
+}
+.p-equipment .border-bottom.-last {
+  margin: 0 auto;
 }
 
 .p-location {
