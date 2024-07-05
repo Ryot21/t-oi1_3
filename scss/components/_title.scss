@@ -2,6 +2,13 @@
 // コンテンツ_メインタイトル
 .c-contents_title{
     position: relative;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0 1px;
+    @include min(768){
+        font-size: clamp(1.6rem, 2vw, 2.5rem);
+    }
+
     &::before{
         content: "";
         position: absolute;
@@ -15,6 +22,9 @@
             font-size: 12px;
         }
     }
+    &.-row2  {&::before{@include min(768){ bottom: -30%; }}}
+    &.-row2_s{&::before{@include max(768){ bottom: -40%; }}}
+
 
     // コンテンツタイトル > ボーダーライン
     &.-b-btm{
@@ -54,6 +64,7 @@
 
     &.-landscape{&::before{content: "LANDSCAPE";}}                                  // 内観デザイン
     &.-land     {&::before{content: "LAND";}}
+    &.-facade   {&::before{content: "FACADE"; white-space: nowrap;}}
     &.-interior {&::before{content: "INTERIOR"; white-space: nowrap;}}
     &.-eq       {&::before{content: "EQUIPMENT"; white-space: nowrap;}}
 
@@ -86,8 +97,12 @@
 // コンテンツ_メインタイトル
 .c-contents_MainTitle{
     position: relative;
-    // font-family: $f-cezanne;
-    .s-LL{padding: 0 1px;}
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0 1px;
+    @include min(768){
+        font-size: clamp(1.6rem, 2vw, 2.2rem);
+    }
 
     // メインタイトル > アイコン
     &.-icon{
