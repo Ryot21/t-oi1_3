@@ -4537,7 +4537,6 @@ button.swiper-pagination-bullet {
 .c-contents_title {
   position: relative;
   font-size: 1.6rem;
-  font-weight: bold;
   padding: 0 1px;
 }
 @media (width >= 768px) {

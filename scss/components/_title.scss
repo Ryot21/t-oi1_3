@@ -3,7 +3,7 @@
 .c-contents_title{
     position: relative;
     font-size: 1.6rem;
-    font-weight: bold;
+    // font-weight: bold;
     padding: 0 1px;
     @include min(768){
         font-size: clamp(1.6rem, 2vw, 2.5rem);
