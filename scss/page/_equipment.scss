@@ -19,7 +19,7 @@
         margin: 0 auto 4vh;
         border-bottom: 1px solid black;
         @include min(768){
-            width: 70vw;
+            width: 100%;
             margin: 0 auto 12vh;
         }
         &.-s{margin: 0 auto 6vh;}
